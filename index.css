@@ -66,10 +66,6 @@ a:link, a:visited {
     transition: 0.5s;
 }
 
-.navbar-default ul li:hover::after {
-    width: 100%;
-}
-
 .buttons:hover {
     background: rgb(25, 23, 23);
 }
