@@ -95,6 +95,15 @@ nav {
     border-radius: 10px;
 }
 
+#but {
+    align-items: right;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    box-shadow: bisque;
+}
+
 #rating { font-size: 0; }
 #rating span { font-size: 28px; }
 #rating span::before { content: "☆"; }
