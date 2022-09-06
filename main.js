@@ -37,3 +37,5 @@ document.querySelector('#rating').addEventListener('click', function (e) {
     if (span === e.target) action = 'remove';
   }
 });
+
+document.getElementById('but').addEventListener('click', () => alert('Hi, we are updating the Help section. Thank you for your patience'))
