@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Application</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/Screenshot 2022-09-05 at 19.07.29.png" alt="House-Picture" title="Company-logo">
+            </div>
+            <div class="logo-name">
+                <h1>Wood House Moving Services</h1>
+            </div>
+            <div class="navbar-default">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="dataFetch">
+            <div class="doc">
+                <form id="area_code" action="" method="post">
+                    <label for="postal-location"></label>
+                    <select id="locations" name="postal-locations">
+                        <option value="Select">Select</option>
+                        <option value="Ngong">Ngong</option>
+                        <option value="Karen">Karen</option>
+                        <option value="Westlands">Westlands</option>
+                        <option value="Parklands">Parklands</option>
+                        <option value="Ruaka">Ruaka</option>
+                        <option value="Ryosambu">Ryosambu</option>
+                    </select>
+                    <input id="one" type="submit" value="Search Location">
+                </form>
+            </div>
+            <div class="doc2">
+                <div class="comments">
+                    <h3>Feedback Form</h3>
+                    <form id="comment_form" action="" method="POST">
+                        <input id="comment_input" type="text" name="comment" placeholder="Add a comment..."></input>
+                        <input id="comment_button" class="buttons" type="submit" value="Post"></input>
+                    </form>
+                </div>
+                <div class="ratings">
+                    <h3>Rate Our service</h3>
+                    <ul id="rating_comments"></ul>
+                    <div id='rating'>
+                        <span>*</span>
+                        <span>*</span>
+                        <span>*</span>
+                        <span>*</span>
+                        <span>*</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

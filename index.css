@@ -1,0 +1,106 @@
+body {
+    background-image: url("./images/pexels-fwstudio-139312.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    height: auto;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navbar-default {
+    width: 40%;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.logo-name {
+    width: 10%;
+}
+
+.navbar-default ul {
+    display: block;
+}
+
+.navbar-default ul li {
+    display: flex;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.navbar-default ul li::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: rgb(11, 1, 1);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar-default ul li:hover::after {
+    width: 100%;
+}
+
+.buttons:hover {
+    background: rgb(25, 23, 23);
+}
+
+.container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dataFetch {
+    display: flex;
+    flex-direction: column;
+    background: beige;
+    align-content: center;
+    height: auto;
+    width: 60%;
+    padding: 25px;
+}
+
+* {
+    font-style: italic;
+}
+
+.doc {
+    width: fit-content;
+}
+
+.ratings {
+    height: auto;
+    border: 0.5px solid beige;
+    width: 40%;
+    padding-top: auto;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+
+#rating span.active {
+    color: orange;
+}
+  
+#rating span {
+    font-size: 42px;
+    cursor: pointer;
+}
