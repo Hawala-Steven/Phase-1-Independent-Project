@@ -88,7 +88,7 @@ nav {
 
 .ratings {
     height: auto;
-    border: 0.5px solid beige;
+    border: 2px solid white;
     width: 40%;
     padding-top: auto;
     padding-left: 10px;
@@ -96,11 +96,8 @@ nav {
 }
 
 
-#rating span.active {
-    color: orange;
-}
-  
-#rating span {
-    font-size: 42px;
-    cursor: pointer;
-}
+#rating { font-size: 0; }
+#rating span { font-size: 28px; }
+#rating span::before { content: "☆"; }
+#rating span.active::before {content: "★"; }
+#rating span:hover { cursor: pointer; }

@@ -31,15 +31,9 @@ loadContent();
 window.addEventListener("hashchange", loadContent)
 
 document.querySelector('#rating').addEventListener('click', function (e) {
-  if (e.target.nodeName === 'SPAN') {
-    var currentSibling = e.target;
-    var nextSibling = e.target;
-    currentSibling.classList.add('active');
-    while ((currentSibling = currentSibling.previousElementSibling)) {
-      currentSibling.classList.add('active');
-    }
-    while ((nextSibling = nextSibling.nextElementSibling)) {
-      nextSibling.classList.remove('active');
-    }
+  let action = 'add';
+  for (const span of this.children) {
+    span.classList[action]('active');
+    if (span === e.target) action = 'remove';
   }
 });
