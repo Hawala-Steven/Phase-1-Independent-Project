@@ -95,7 +95,6 @@ nav {
     border-radius: 10px;
 }
 
-
 #rating { font-size: 0; }
 #rating span { font-size: 28px; }
 #rating span::before { content: "☆"; }
