@@ -106,7 +106,6 @@ a:link, a:visited {
 }
 
 #but {
-    align-items: right;
     cursor: pointer;
     height: 30px;
     width: 100px;
